@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[this.async(function(${1}) {
+  ${0}
+}.bind(this)${2});
+]]></content>
+    <tabTrigger>async</tabTrigger>
+    <scope>text.html</scope>
+</snippet>

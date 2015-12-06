@@ -1,0 +1,3 @@
+[
+    { "keys": ["super+ctrl+o"], "command": "openlocation_prompt" }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Numberfy",
+                "mnemonic": "N",
+                "command": "numberfy_prompt"
+            }
+        ]
+    }
+]

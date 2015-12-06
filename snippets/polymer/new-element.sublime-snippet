@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+<dom-module id="${1:my-elem}">
+  <style is="custom-style">
+
+  </style>
+  <template>
+
+  </template>
+</dom-module>
+<script>
+  (function() {
+    Polymer({
+      is: '${1:my-elem}',
+      properties: {
+
+      },
+
+    });
+  })();
+</script>
+]]></content>
+    <tabTrigger>poly</tabTrigger>
+</snippet>
