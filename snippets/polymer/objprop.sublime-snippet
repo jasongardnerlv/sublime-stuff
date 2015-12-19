@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[${1:myprop}: {
+  type: Object,
+  value: function(){return{};}
+}${0}
+]]></content>
+    <tabTrigger>objprop</tabTrigger>
+    <scope>text.html</scope>
+</snippet>

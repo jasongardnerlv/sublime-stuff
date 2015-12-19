@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[${1:myprop}: {
+  type: Array,
+  value: function(){return[];}
+}${0}
+]]></content>
+    <tabTrigger>arrprop</tabTrigger>
+    <scope>text.html</scope>
+</snippet>
