@@ -1,3 +1,7 @@
 {
-    "somekey": "/some/file/path"
+    "settingsPath": "/path/to/OpenLocation/OpenLocation.sublime-settings",
+    "aliasMap": {
+        "mydir1": "/path/to/some/dir",
+        "mydir2": "/path/to/some/other/dir"
+    }
 }
