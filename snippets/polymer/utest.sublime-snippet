@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[test('${1:test description}', function(done) {
+  ${0}
+  done();
+});]]></content>
+    <tabTrigger>utest</tabTrigger>
+    <scope>text.html</scope>
+</snippet>
