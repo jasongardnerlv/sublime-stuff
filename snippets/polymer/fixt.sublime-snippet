@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[<test-fixture id="${1:fixturename}">
+  <template>
+    <${2:element-name}>${0}</${2:element-name}>
+  </template>
+</test-fixture>]]></content>
+    <tabTrigger>fixt</tabTrigger>
+    <scope>text.html</scope>
+</snippet>
