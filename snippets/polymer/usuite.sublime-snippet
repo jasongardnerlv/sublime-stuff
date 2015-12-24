@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[test('${1:suite description}', function() {
+  setup(function() {
+  });
+  teardown(function() {
+  });
+  ${0}
+});]]></content>
+    <tabTrigger>usuite</tabTrigger>
+    <scope>text.html</scope>
+</snippet>
