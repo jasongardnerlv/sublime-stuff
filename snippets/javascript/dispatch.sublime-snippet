@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[window.dispatchEvent(new CustomEvent('${1:eventname}', {detail:${2:detail}}));${0}]]></content>
+    <tabTrigger>dispatch</tabTrigger>
+    <scope>text.html,source.js</scope>
+</snippet>

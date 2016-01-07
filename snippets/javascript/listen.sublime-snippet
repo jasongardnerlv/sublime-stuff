@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[window.addEventLister('${1:eventname}', ${2:myfunction});${0}]]></content>
+    <tabTrigger>listen</tabTrigger>
+    <scope>text.html,source.js</scope>
+</snippet>
