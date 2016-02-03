@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[test('${1:suite description}', function() {
+    <content><![CDATA[suite('${1:suite description}', function() {
   setup(function() {
   });
   teardown(function() {
