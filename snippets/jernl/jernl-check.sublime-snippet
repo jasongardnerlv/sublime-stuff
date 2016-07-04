@@ -1,4 +1,5 @@
 <snippet>
     <content>✅</content>
-    <tabTrigger>jcheck</tabTrigger>
+    <tabTrigger>check</tabTrigger>
+    <scope>text.jernl</scope>
 </snippet>

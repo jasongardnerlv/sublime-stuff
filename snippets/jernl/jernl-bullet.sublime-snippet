@@ -1,4 +1,5 @@
 <snippet>
     <content>•</content>
-    <tabTrigger>jbullet</tabTrigger>
+    <tabTrigger>*</tabTrigger>
+    <scope>text.jernl</scope>
 </snippet>

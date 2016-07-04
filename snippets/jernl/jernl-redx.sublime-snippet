@@ -1,4 +1,5 @@
 <snippet>
     <content>❌</content>
-    <tabTrigger>jredx</tabTrigger>
+    <tabTrigger>X</tabTrigger>
+    <scope>text.jernl</scope>
 </snippet>
