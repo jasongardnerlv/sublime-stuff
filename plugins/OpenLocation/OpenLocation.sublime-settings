@@ -1,7 +1,11 @@
 {
     "settingsPath": "/path/to/OpenLocation/OpenLocation.sublime-settings",
-    "aliasMap": {
+    "folderAliases": {
         "mydir1": "/path/to/some/dir",
         "mydir2": "/path/to/some/other/dir"
+    },
+    "fileAliases": {
+        "myfile1": "/path/to/some/file",
+        "myfile2": "/path/to/some/other/file"
     }
 }
