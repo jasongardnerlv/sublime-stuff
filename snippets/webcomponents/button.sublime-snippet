@@ -1,0 +1,4 @@
+<snippet>
+    <content><![CDATA[import '@insight/insight-common/components/button/insight-button.js';]]></content>
+    <tabTrigger>button</tabTrigger>
+</snippet>

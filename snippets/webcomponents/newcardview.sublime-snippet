@@ -1,0 +1,95 @@
+<snippet>
+    <content><![CDATA[
+import {ViewBase, html} from '@insight/insight-common/components/insight-view-base.js';
+import {unsafeHTML} from 'lit/directives/unsafe-html.js';
+import '@insight/insight-common/components/button/insight-button.js';
+import '@insight/insight-common/components/button/insight-icon-button.js';
+import '@insight/insight-common/components/container/insight-card.js';
+
+class SomeView extends ViewBase {
+  static get properties() {
+    return {
+      __saving: {type: Boolean},
+      __loading: {type: Boolean}
+    };
+  }
+
+  constructor() {
+    super();
+    this.__loading = true;
+  }
+
+  firstUpdated() {
+    this._dispatchEvent('view-loaded', {title: 'The page title'});
+  }
+
+  _render() {
+    return html`
+      \${unsafeHTML(this.__css)}
+      <insight-card id="new-pc">
+        <div slot="cardContent" class="flex-layout-vertical">
+          <div class="typo-title flex-layout-horizontal flex-layout-justified card-title">
+            The Title
+            <insight-icon-button
+              icon-name="clear"
+              @click=\${this.__cancelled}
+              title=\${this._i18n('common:cancel')}
+              ?disabled=\${this.__saving}
+            ></insight-icon-button>
+          </div>
+          <div>TODO:body</div>
+          <div class="flex-layout-horizontal flex-layout-wrap flex-layout-center flex-layout-end-justified card-footer">
+            <insight-button dense contained success ?disabled=\${this.__loading} ?loading=\${this.__saving}>
+              \${this._i18n('common:save')}
+            </insight-button>
+          </div>
+        </div>
+      </insight-card>
+    `;
+  }
+
+  get __css() {
+    return `
+    <style>
+      :host {
+        overflow-y: auto;
+      }
+      :host insight-card {
+        max-width: 800px;
+        margin: 0 auto;
+        --card-body-padding-top: 0;
+        --card-padding: 16px 16px 16px;
+      }
+      :host([mobile-res]) insight-card {
+        --card-padding: 8px 8px 24px;
+      }
+      :host .card-title {
+        margin-bottom: 16px;
+      }
+      :host .card-title > div {
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+      }
+      :host .card-title insight-icon-button {
+        width: 32px;
+        height: 32px;
+        --icon-display: block;
+        --icon-vertical-align: top;
+        --icon-width: 24px;
+        --icon-padding: 4px;
+      }
+      :host .card-footer {
+        border-top: 1px solid var(--mdc-theme-divider-color);
+        padding-top: 16px;
+      }
+      :host .card-footer insight-button:last-child {
+        margin-left: 8px;
+      }
+    </style>
+  `;
+  }
+}
+window.customElements.define('some-view', SomeView);
+]]></content>
+    <tabTrigger>newcardview</tabTrigger>
+</snippet>

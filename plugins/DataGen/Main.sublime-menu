@@ -1,0 +1,13 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "DataGen",
+                "mnemonic": "=",
+                "command": "datagen_prompt"
+            }
+        ]
+    }
+]

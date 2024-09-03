@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+import {InsightElement, html} from '@insight/insight-common/components/insight-element.js';
+import {unsafeHTML} from 'lit-html/directives/unsafe-html.js';
+// import '@insight/insight-common/components/button/insight-button.js';
+
+class ${1:MyElement} extends InsightElement {
+  firstUpdated() {
+
+  }
+
+  _render() {
+    return html`
+      \${unsafeHTML(this.__css)}
+      <h1>Hello World!</h1>
+    `;
+  }
+
+  get __css() {
+    return `
+    <style>
+    </style>
+  `;
+  }
+}
+window.customElements.define('${2:my-element}', ${1:MyElement});
+]]></content>
+    <tabTrigger>newel</tabTrigger>
+</snippet>

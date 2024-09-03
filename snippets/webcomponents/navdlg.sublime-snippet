@@ -1,0 +1,86 @@
+<snippet>
+    <content><![CDATA[
+import {InsightElement, html} from '@insight/insight-common/components/insight-element.js';
+import {unsafeHTML} from 'lit/directives/unsafe-html.js';
+import '@insight/insight-common/components/button/insight-button.js';
+import '@insight/insight-common/components/container/insight-dialog.js';
+
+class ${1:MyView} extends InsightElement {
+  static get properties() {
+    return {
+      __loading: {type: Boolean}
+    };
+  }
+
+  /****************************************************  Public Api  ****************************************************/
+
+  show(args) {
+    this.__loading = true;
+    this.__dialogEl.open();
+    setTimeout(() => {
+      // this._getElement('todo').setFocus();
+    }, 300);
+  }
+
+  close() {
+    this.__dialogEl.close();
+  }
+
+  /**************************************************  Private Methods  *************************************************/
+
+  __dialogClosed(e) {
+    if (this._getEventPath(e)[0].id !== 'inner-dialog') return;
+    //TODO
+  }
+
+  get __dialogEl() {
+    return this._getElement('insight-dialog');
+  }
+
+  _render() {
+    return html`
+      \${unsafeHTML(this.__css)}
+      <insight-dialog id="inner-dialog" modal can-dismiss @closed=\${e => this.__dialogClosed(e)}>
+        <div slot="modalHeader" class="modal-header">
+          The title
+        </div>
+        <div id="modal-body" slot="modalBody">
+          <div>TODO</div>
+          <div class="flex-layout-horizontal flex-layout-center-justified btn-footer">
+            <insight-button contained success dense ?disabled=\${this.__loading}>
+              \${this._i18n('common:save')}
+            </insight-button>
+          </div>
+        </div>
+      </insight-dialog>
+    `;
+  }
+
+  get __css() {
+    return `
+      <style>
+        :host #inner-dialog {
+          --dialog-max-width: 600px;
+          --dialog-min-width: 600px;
+          --dialog-margin-top: 115px;
+          --dialog-padding-body: 8px 24px 20px;
+        }
+        :host([tablet-res]) #inner-dialog {
+          --dialog-max-width: min(90vw, 600px);
+          --dialog-min-width: min(90vw, 600px);
+        }
+        :host([mobile-res]) #inner-dialog {
+          --dialog-max-width: 95vw;
+          --dialog-min-width: 95vw;
+        }
+        :host .btn-footer {
+          margin-top: 16px;
+        }
+      </style>
+    `;
+  }
+}
+window.customElements.define('${2:my-tag}', ${1:MyView});
+]]></content>
+    <tabTrigger>newdlg</tabTrigger>
+</snippet>

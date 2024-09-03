@@ -1,0 +1,4 @@
+<snippet>
+    <content><![CDATA[flex-layout-${1:var}]]></content>
+    <tabTrigger>flex</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+this._dispatchEvent('show-snackbar', {message: this._i18n('common:${1:key}'), danger: true});
+]]></content>
+    <tabTrigger>snack</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<link inline rel="stylesheet" href="node_modules/@insight/insight-common/css/loader.css" />
+<div id="list-loader" class="flex-layout-horizontal flex-layout-center-center">
+  <div class="insight-loader" style=\${window.Testophobia ? 'border-top-color:#ccc;' : ''}></div>
+</div>
+]]></content>
+    <tabTrigger>loader</tabTrigger>
+</snippet>

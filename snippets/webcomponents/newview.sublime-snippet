@@ -1,0 +1,45 @@
+<snippet>
+    <content><![CDATA[
+import {ViewBase, html} from '@insight/insight-common/components/insight-view-base.js';
+import {unsafeHTML} from 'lit-html/directives/unsafe-html.js';
+import '@insight/insight-common/components/container/insight-card.js';
+
+class ${1:MyView} extends ViewBase {
+  firstUpdated() {
+    this._dispatchEvent('view-loaded', {title: this._i18n('sometitle')});
+  }
+
+  _render() {
+    return html`
+      \${unsafeHTML(this.__css)}
+      <insight-card id="${3:foo}-main">
+        <div slot="cardContent" class="flex-layout-vertical">
+          <div>TODO</div>
+        </div>
+      </insight-card>
+    `;
+  }
+
+  get __css() {
+    return `
+      <style>
+        :host #${3:foo}-main {
+          height: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          --card-explicit-height: 100%;
+          --card-padding: 0;
+          --card-body-padding-top: 0;
+        }
+        :host #${3:foo}-main > div {
+          overflow: hidden;
+          height: 100%;
+        }
+      </style>
+    `;
+  }
+}
+window.customElements.define('${2:my-tag}', ${1:MyView});
+]]></content>
+    <tabTrigger>newview</tabTrigger>
+</snippet>

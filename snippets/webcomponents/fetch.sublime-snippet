@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+Insight.state.fetchOneTime(
+  '${1:key}',
+  state => {
+    console.dir(state);
+  },
+  false,
+  {
+    prop: 'val'
+  }
+);
+]]></content>
+    <tabTrigger>fetch</tabTrigger>
+</snippet>

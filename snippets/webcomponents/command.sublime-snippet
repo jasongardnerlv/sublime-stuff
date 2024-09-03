@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+Insight.state.sendCommandOneTime(
+  '${1:key}',
+  state => {
+    console.dir(state);
+  },
+  {
+    prop: 'val'
+  }
+);
+]]></content>
+    <tabTrigger>command</tabTrigger>
+</snippet>

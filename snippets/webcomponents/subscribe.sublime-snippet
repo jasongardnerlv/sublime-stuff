@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+this._subscribe('${1:someModel}', (state, key, type) => {
+  this.__${2:someVar} = state;
+});
+]]></content>
+    <tabTrigger>subscribe</tabTrigger>
+</snippet>

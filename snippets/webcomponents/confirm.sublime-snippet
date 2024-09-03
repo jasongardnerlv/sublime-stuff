@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+this._dispatchEvent('show-confirm', {
+  success: true,
+  title: undefined,
+  message: '',
+  spinOnPause: true,
+  confirmBtnText: '',
+  focusEl: undefined,
+  onAccept: closeDialog => {
+    closeDialog();
+    this.__performUpdate(true);
+  },
+  onDecline: undefined
+});
+]]></content>
+    <tabTrigger>confirm</tabTrigger>
+</snippet>
+

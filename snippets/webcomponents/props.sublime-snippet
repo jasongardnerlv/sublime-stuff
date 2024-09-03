@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+static get properties() {
+  return {
+    ${1:varName}: {type: ${2:Boolean}}
+  };
+}
+]]></content>
+    <tabTrigger>props</tabTrigger>
+</snippet>

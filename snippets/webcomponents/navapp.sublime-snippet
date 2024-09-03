@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+this._dispatchEvent('navigate-app', {path: `${1:path}`, event: e});
+]]></content>
+    <tabTrigger>nav</tabTrigger>
+</snippet>

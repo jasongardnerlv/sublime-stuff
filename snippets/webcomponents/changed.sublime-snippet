@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+updated(changedProperties) {
+  //if (changedProperties.has('foo')) doSomething(this.foo);
+}
+]]></content>
+    <tabTrigger>changed</tabTrigger>
+</snippet>

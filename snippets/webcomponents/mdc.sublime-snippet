@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+var(--mdc-theme-${1:var})
+]]></content>
+    <tabTrigger>mdc</tabTrigger>
+</snippet>

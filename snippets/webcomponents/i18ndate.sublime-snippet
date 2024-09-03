@@ -1,0 +1,4 @@
+<snippet>
+    <content><![CDATA[import {i18nDate} from '@insight/insight-common/i18n/i18n-date.js';]]></content>
+    <tabTrigger>i18ndate</tabTrigger>
+</snippet>

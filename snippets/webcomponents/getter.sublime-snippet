@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+get ${1:__myGetter}() {
+  return this._getElement('${2:selector}');
+}
+]]></content>
+    <tabTrigger>getter</tabTrigger>
+</snippet>
