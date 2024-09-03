@@ -1,11 +1,14 @@
 {
-    "settingsPath": "/path/to/OpenLocation/OpenLocation.sublime-settings",
+    "settingsPath": "/Users/jasongardner/Library/Application Support/Sublime Text 3/Packages/OpenLocation/OpenLocation.sublime-settings",
     "folderAliases": {
-        "mydir1": "/path/to/some/dir",
-        "mydir2": "/path/to/some/other/dir"
+        "projects": "/Users/jasongardner/Documents/sublime/projects",
+        "snippets": "/Users/jasongardner/Library/Application Support/Sublime Text 3/Packages/github-snippets",
+        "jernl-src": "/Users/jasongardner/Library/Application Support/Sublime Text 3/Packages/jernl",
+        "datagen": "/Users/jasongardner/workspace/github/sublime-stuff/plugins/DataGen"
     },
     "fileAliases": {
-        "myfile1": "/path/to/some/file",
-        "myfile2": "/path/to/some/other/file"
+        "openlocation": "/Users/jasongardner/Library/Application Support/Sublime Text 3/Packages/OpenLocation/OpenLocation.sublime-settings",
+        "shortcuts": "/Users/jasongardner/Documents/sublime/shortcuts.txt",
+        "ui-checklist": "/Users/jasongardner/workspace/insight/ui-checklist.txt"
     }
 }
